@@ -1,7 +1,10 @@
 import logoImg from "../assets/logo.svg";
-const Navbar = () => {
+import Button from "./Button";
+const Navbar = ({ className }) => {
   return (
-    <div className="absolute flex justify-center w-full top-0 bg-white">
+    <div
+      className={`fixed flex justify-center w-full top-0 bg-white ${className}`}
+    >
       <div className="flex px-8 justify-between w-full max-w-[1200px]">
         <div className="flex place-content-center">
           <img src={logoImg} alt="Easybank Logo" className="object-contain" />
@@ -17,10 +20,8 @@ const Navbar = () => {
             </a>
           ))}
         </div>
-        <div className="py-4">
-          <button className="px-8 py-2 rounded-full text-white font-semibold bg-linear-to-r from-limegreen to-brightcyan">
-            Request Invite
-          </button>
+        <div className="flex items-center justify-center">
+          <Button>Request Invite</Button>
         </div>
       </div>
     </div>
