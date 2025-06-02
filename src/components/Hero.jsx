@@ -6,11 +6,12 @@ import imgMockups from "../assets/image-mockups.png";
 const Hero = ({ className }) => {
   return (
     <div
-      className={`flex relative items-center justify-center ${className} py-8 min-h-[60vh] bg-neutral-lightgray bg-[url(/assets/bg-intro-desktop.svg)] bg-[length:auto_150%] bg-no-repeat bg-[position:130%_60%] z-0`}
+      className={`flex flex-col flex-col-reverse relative items-center justify-center ${className} p-8 lg:p-16 min-h-[60vh] bg-neutral-lightgray bg-[url(/assets/bg-intro-mobile.svg)] lg:bg-[url(/assets/bg-intro-desktop.svg)] bg-contain lg:bg-[length:auto_60vw] bg-no-repeat lg:bg-[center_right_-25vw] z-0 gap-4`}
+      // className={`flex flex-col flex-col-reverse relative items-center justify-center ${className} p-8 min-h-[60vh] bg-neutral-lightgray bg-[url(/assets/bg-intro-mobile.svg)] lg:bg-[url(/assets/bg-intro-desktop.svg)] bg-contain lg:bg-[length:auto_175%] bg-no-repeat lg:bg-[position:175%_60%] z-0 gap-4`}
     >
       <div className="w-full max-w-[1200px]">
-        <div className="w-1/3">
-          <h1 className="mb-2 text-5xl font-extralight text-neutral-800">
+        <div className="w-full text-center lg:text-left lg:w-1/3">
+          <h1 className="mb-2 text-4xl mb:text-5xl font-extralight text-neutral-800">
             Next generation digital banking
           </h1>
           <p className="text-lg text-neutral-600 mb-4">
@@ -24,7 +25,7 @@ const Hero = ({ className }) => {
       <img
         src={imgMockups}
         alt="Phone Mockups"
-        className="absolute top-1/2 -translate-y-1/2 -right-[7.5%] w-[45%] object-contain z-1"
+        className="lg:absolute lg:top-1/2 lg:-translate-y-1/2 lg:-right-[7.5%] lg:w-[45%] w-[110%] max-w-[100vw] lg:max-w-[100%] lg:max-h-[120vh] -mt-[0%] top-0 object-contain z-1"
       />
     </div>
   );
