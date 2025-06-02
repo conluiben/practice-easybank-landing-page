@@ -1,13 +1,10 @@
 import Button from "./Button";
-// import bgDesktop from "../assets/image-plane.jpg";
-// import bgDesktop from "../assets/bg-intro-desktop.svg";
 import imgMockups from "../assets/image-mockups.png";
 
 const Hero = ({ className }) => {
   return (
     <div
-      className={`flex flex-col flex-col-reverse relative items-center justify-center ${className} p-8 lg:p-16 min-h-[60vh] bg-neutral-lightgray bg-[url(/assets/bg-intro-mobile.svg)] lg:bg-[url(/assets/bg-intro-desktop.svg)] bg-contain lg:bg-[length:auto_60vw] bg-no-repeat lg:bg-[center_right_-25vw] z-0 gap-4`}
-      // className={`flex flex-col flex-col-reverse relative items-center justify-center ${className} p-8 min-h-[60vh] bg-neutral-lightgray bg-[url(/assets/bg-intro-mobile.svg)] lg:bg-[url(/assets/bg-intro-desktop.svg)] bg-contain lg:bg-[length:auto_175%] bg-no-repeat lg:bg-[position:175%_60%] z-0 gap-4`}
+      className={`flex flex-col flex-col-reverse relative items-center justify-center ${className} p-8 lg:px-16 lg:py-32 min-h-[30vh] xl:min-h-[50vh] bg-neutral-lightgray bg-[url(/assets/bg-intro-mobile.svg)] lg:bg-[url(/assets/bg-intro-desktop.svg)] bg-contain lg:bg-[length:auto_60vw] bg-no-repeat lg:bg-[center_right_-25vw] z-0 gap-4`}
     >
       <div className="w-full max-w-[1200px]">
         <div className="w-full text-center lg:text-left lg:w-1/3">
@@ -25,7 +22,7 @@ const Hero = ({ className }) => {
       <img
         src={imgMockups}
         alt="Phone Mockups"
-        className="lg:absolute lg:top-1/2 lg:-translate-y-1/2 lg:-right-[7.5%] lg:w-[45%] w-[110%] max-w-[100vw] lg:max-w-[100%] lg:max-h-[120vh] -mt-[0%] top-0 object-contain z-1"
+        className="lg:absolute lg:top-1/2 lg:-translate-y-1/2 lg:-right-[7.5%] lg:w-[45%] w-[110%] max-w-[100vw] lg:max-w-[100%] lg:max-h-[120vh] -mt-[25%] lg:mt-0 top-0 object-contain z-10"
       />
     </div>
   );
