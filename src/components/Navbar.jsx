@@ -12,7 +12,7 @@ const Navbar = ({ className }) => {
     <div
       className={`fixed flex justify-center w-full top-0 bg-white ${className}`}
     >
-      <div className="flex px-8 justify-between w-full max-w-[1200px]">
+      <div className="flex justify-between w-full max-w-[1200px] px-8 lg:px-16">
         <div className="flex place-content-center">
           <img src={logoImg} alt="Easybank Logo" className="object-contain" />
         </div>

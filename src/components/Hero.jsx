@@ -4,9 +4,9 @@ import imgMockups from "../assets/image-mockups.png";
 const Hero = ({ className }) => {
   return (
     <div
-      className={`flex flex-col flex-col-reverse relative items-center justify-center ${className} p-8 lg:px-16 lg:py-32 min-h-[30vh] xl:min-h-[50vh] bg-neutral-lightgray bg-[url(/assets/bg-intro-mobile.svg)] lg:bg-[url(/assets/bg-intro-desktop.svg)] bg-contain lg:bg-[length:auto_60vw] bg-no-repeat lg:bg-[center_right_-25vw] z-0 gap-4`}
+      className={`flex flex-col flex-col-reverse relative items-center justify-center ${className} min-h-[30vh] xl:min-h-[50vh] bg-neutral-lightgray bg-[url(/assets/bg-intro-mobile.svg)] lg:bg-[url(/assets/bg-intro-desktop.svg)] bg-contain lg:bg-[length:auto_60vw] bg-no-repeat lg:bg-[center_right_-25vw] z-0 gap-4`}
     >
-      <div className="w-full max-w-[1200px]">
+      <div className="w-full max-w-[1200px] py-8 px-8 lg:px-16 lg:py-32">
         <div className="w-full text-center lg:text-left lg:w-1/3">
           <h1 className="mb-2 text-4xl mb:text-5xl font-extralight text-neutral-800">
             Next generation digital banking

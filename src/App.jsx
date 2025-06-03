@@ -5,8 +5,8 @@ import Navbar from "./components/Navbar";
 function App() {
   return (
     <div className="">
-      <Navbar className="h-[80px] z-5" />
-      <Hero className="mt-[80px]" />
+      <Navbar className="h-[60px] md:h-[80px] z-5" />
+      <Hero className="mt-[60px] md:mt-[80px]" />
     </div>
   );
 }
