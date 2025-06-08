@@ -8,7 +8,13 @@
   --color-neutral-lightblue: hsl(220, 16%, 96%);
   --color-neutral-lightgray: hsl(0, 0%, 98%);
 }
+.descriptive-text {
+  @apply text-base text-neutral-500;
+}
 
 * {
   font-family: Public Sans, sans-serif;
+}
+body {
+  overflow-x: hidden;
 }
