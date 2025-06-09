@@ -20,7 +20,7 @@ const Navbar = ({ className }) => {
       <div
         className={`${
           isMobile ? (isMenuShown ? "flex" : "hidden") : "flex"
-        } fixed lg:static gap-x-0 bg-white flex-col lg:flex-row w-[100%] lg:w-auto  left-0 top-[80px] lg:top-0 mx-auto`}
+        } fixed lg:static gap-x-0 bg-white flex-col lg:flex-row w-[100%] lg:w-auto left-0 top-[60px] lg:top-0 mx-auto`}
       >
         {["Home", "About", "Contact", "Blog", "Careers"].map((aLink, idx) => (
           <a
@@ -35,7 +35,7 @@ const Navbar = ({ className }) => {
       <div className="hidden lg:flex items-center justify-center">
         <Button>Request Invite</Button>
       </div>
-      <div className="flex items-center justify-center lg:hidden">
+      <div className="flex items-center justify-center lg:hidden hover:cursor-pointer">
         <img
           src={burgerIcon}
           alt="Menu Icon"
