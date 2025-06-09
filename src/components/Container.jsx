@@ -6,8 +6,8 @@ const Container = ({
 }) => {
   return (
     <div
-      className={`flex items-center justify-center w-full py-8 px-8 md:px-16 ${
-        hasVerticalPadding && "lg:py-32"
+      className={`flex items-center justify-center w-full p-8 md:px-16 ${
+        hasVerticalPadding && "py-16 lg:py-24"
       } ${classNameOuter}`}
     >
       <div className={`w-full max-w-[1200px] ${classNameInner}`}>

@@ -5,7 +5,7 @@ import Container from "./Container";
 const Hero = ({ className }) => {
   return (
     <Container
-      classNameOuter={`relative ${className} min-h-[30vh] xl:min-h-[50vh] bg-neutral-lightgray bg-[url(/assets/bg-intro-mobile.svg)] lg:bg-[url(/assets/bg-intro-desktop.svg)] bg-contain lg:bg-[length:auto_60vw] bg-no-repeat lg:bg-[center_right_-25vw] z-0`}
+      classNameOuter={`relative ${className} min-h-[30vh] xl:min-h-[60vh] bg-neutral-lightgray bg-[url(/assets/bg-intro-mobile.svg)] lg:bg-[url(/assets/bg-intro-desktop.svg)] bg-contain lg:bg-[length:auto_60vw] bg-no-repeat lg:bg-[center_right_-25vw] z-0`}
       classNameInner={`flex flex-col flex-col-reverse items-center lg:items-start gap-4`}
       hasVerticalPadding
     >

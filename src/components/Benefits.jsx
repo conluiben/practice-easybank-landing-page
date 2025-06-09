@@ -33,13 +33,17 @@ const listOfBenefits = [
 
 const Benefits = () => {
   return (
-    <Container classNameInner="text-center" hasVerticalPadding>
+    <Container
+      classNameOuter="bg-neutral-lightblue"
+      classNameInner="text-center md:text-left"
+      hasVerticalPadding
+    >
       <h2 className="text-3xl font-extralight mb-2">Why choose Easybank?</h2>
       <p className="descriptive-text mb-16">
         We leverage Open Banking to turn you bank account into your financial
         hub. Control your finances like never before.
       </p>
-      <div className="flex flex-col gap-8 md:grid md:grid-cols-2">
+      <div className="flex flex-col gap-8 sm:grid sm:grid-cols-2 lg:grid-cols-4">
         {listOfBenefits.map((aBenefit) => {
           return (
             <div className="flex flex-col gap-4 items-center md:text-left md:items-start">
