@@ -41,7 +41,7 @@ const Articles = () => {
       <h2 className="text-3xl font-extralight mb-8">Latest Articles</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 auto-rows-fr">
         {listArticles.map((anArticle) => (
-          <div className="flex flex-col bg-white rounded-lg overflow-hidden">
+          <div className="group flex flex-col bg-white rounded-lg overflow-hidden hover:cursor-pointer hover:shadow-lg duration-200">
             <img
               src={anArticle.image}
               alt={anArticle.headline}
@@ -49,7 +49,7 @@ const Articles = () => {
             />
             <div className="flex flex-col justify-center p-6 grow gap-2 text-left">
               <p className="descriptive-text !text-xs">By {anArticle.author}</p>
-              <h4 className="text-xl/6 font-light mb-2">
+              <h4 className="text-xl/6 font-light mb-2 group-hover:text-limegreen transition-colors duration-200">
                 {anArticle.headline}
               </h4>
               <p className="descriptive-text line-clamp-4">{anArticle.body}</p>
