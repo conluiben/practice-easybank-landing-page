@@ -40,8 +40,11 @@ const Articles = () => {
     >
       <h2 className="text-3xl font-extralight mb-8">Latest Articles</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 auto-rows-fr">
-        {listArticles.map((anArticle) => (
-          <div className="group flex flex-col bg-white rounded-lg overflow-hidden hover:cursor-pointer hover:shadow-lg duration-200">
+        {listArticles.map((anArticle, idx) => (
+          <div
+            className="group flex flex-col bg-white rounded-lg overflow-hidden hover:cursor-pointer hover:shadow-lg duration-200"
+            key={idx}
+          >
             <img
               src={anArticle.image}
               alt={anArticle.headline}

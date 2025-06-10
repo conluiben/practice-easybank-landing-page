@@ -44,9 +44,12 @@ const Benefits = () => {
         hub. Control your finances like never before.
       </p>
       <div className="flex flex-col gap-8 sm:grid sm:grid-cols-2 lg:grid-cols-4">
-        {listOfBenefits.map((aBenefit) => {
+        {listOfBenefits.map((aBenefit, idx) => {
           return (
-            <div className="flex flex-col gap-4 items-center md:text-left md:items-start">
+            <div
+              className="flex flex-col gap-4 items-center md:text-left md:items-start"
+              key={idx}
+            >
               <img src={aBenefit.image} alt={aBenefit.heading} />
               <h3>{aBenefit.heading}</h3>
               <p className="descriptive-text">{aBenefit.description}</p>

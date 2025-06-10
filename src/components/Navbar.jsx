@@ -11,7 +11,7 @@ const Navbar = ({ className }) => {
 
   return (
     <Container
-      classNameOuter={`fixed top-0 bg-white lg:py-0 ${className}`}
+      classNameOuter={`fixed top-0 bg-white lg:py-0 items-stretch ${className}`}
       classNameInner={`flex flex-row justify-between`}
     >
       <div className="flex place-content-center">
