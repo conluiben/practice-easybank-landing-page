@@ -3,6 +3,7 @@ import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import Benefits from "./components/Benefits";
 import Articles from "./components/Articles";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Hero className="mt-[60px] md:mt-[80px]" />
       <Benefits />
       <Articles />
+      <Footer />
     </div>
   );
 }
